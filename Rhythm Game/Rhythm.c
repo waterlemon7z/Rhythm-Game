@@ -56,15 +56,14 @@ void cursor(int n)
 * date   : 2019.11.17
 * author : DARK-Lemon7z
 * arg    : int
-* return      : void
+* return : void
 * description : print game board.
 */
 
 void GMBoardVOID(int iSel)
 {
-	
 	cursor(0);
-	int i, x, y, cur,cycle, iStartTick,  iKey, esc = 1;
+	int i, x, y, cur, cycle, iStartTick,  iKey, esc = 1, iCycle = 0;
 	COLOR(YELLOW);
 	printf("\t！！！！！！！！！！！！！！！！！！！！！\n");
 	for (i = 0; i < 18; i++)
@@ -264,7 +263,13 @@ void GMBoardVOID(int iSel)
 			printf("COMBO : %d  ", iPoint);
 		}
 		gotoxy(x + 40, y + esc);
+		iCycle++;
+		if (iCycle > 410)
+		{
+			break;
+		}
  	}
+	GMOverVOID(iPoint);
 }
 
 /*
@@ -375,3 +380,22 @@ void MusicSetVOID()
 {
 	AltaleSheet();
 }
+
+/*
+* name   : GMOverVOID
+* date   : 2020.02.04
+* author : DARK-Lemon7z
+* arg    : int
+* return      : void.
+* description : print game result.
+*/
+void GMOverVOID(int iCombo)
+{
+	PlaySound(NULL, 0, 0);
+	system("cls");
+	cursor(10, 5);
+	printf("Last combo : %d\n", iCombo);
+	puts("press to continue");
+	system("pause");
+}
+

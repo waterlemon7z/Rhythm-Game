@@ -8,9 +8,12 @@ int main()
 	int iSel;
 	InitVOID();//initial settings
 	MusicSetVOID();//Set music notes
+	while (1)
+	{
 	iSel = TitleINT();
 	if (iSel == 5)
 		return 0;
 	GMBoardVOID(iSel);
+	}
 	return 0;
 }    

@@ -40,5 +40,5 @@ void gotoxy(int x, int y);
 
 void AltaleSheet();
 
-
+void GMOverVOID(int iCombo);
 #endif

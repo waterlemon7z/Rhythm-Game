@@ -1,5 +1,5 @@
 /*Rhythm Game v1*/
-/*DARK-SIRING*/
+/*DARK-Lemon7z*/
 #include "Rhythm.h"
 #include "Music.h"
 

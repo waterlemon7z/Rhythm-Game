@@ -16,7 +16,7 @@ Hit s_Hit;
 /*
 * name   : gotoXY
 * date   : 2019.11.17
-* author : DARK-SIRING
+* author : DARK-Lemon7z
 * arg    : int
 * return      : void
 * description : Return x and y.
@@ -31,7 +31,7 @@ void gotoxy(int x, int y)
 /*
 * name   : cursor
 * date   : 2019.11.17
-* author : Lemon7z
+* author : DARK-Lemon7z
 * arg    : int
 * return      : void
 * description : Set cursor.
@@ -54,7 +54,7 @@ void cursor(int n)
 /*
 * name   : GMBoardVOID
 * date   : 2019.11.17
-* author : DARK-SIRING
+* author : DARK-Lemon7z
 * arg    : int
 * return      : void
 * description : print game board.
@@ -270,7 +270,7 @@ void GMBoardVOID(int iSel)
 /*
 * name   : TitleINT
 * date   : 2019.11.17
-* author : DARK-SIRING
+* author : DARK-Lemon7z
 * arg    : int
 * return      : Return value that chosen value by user.
 * description : print game title.
